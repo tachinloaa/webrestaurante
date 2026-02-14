@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-to-br from-stone-50 to-orange-50 text-stone-800 font-sans;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+  }
+  
+  .text-shadow-lg {
+    text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.6), 0px 0px 20px rgba(255, 112, 67, 0.3);
+  }
+  
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .gradient-text {
+    background: linear-gradient(135deg, #D32F2F 0%, #FF7043 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .card-glow {
+    box-shadow: 0 10px 40px rgba(255, 112, 67, 0.15), 0 0 0 1px rgba(255, 112, 67, 0.1);
+  }
+  
+  .card-glow:hover {
+    box-shadow: 0 20px 60px rgba(255, 112, 67, 0.25), 0 0 0 2px rgba(255, 112, 67, 0.2);
+  }
+}

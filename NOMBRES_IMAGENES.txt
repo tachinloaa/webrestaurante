@@ -1,0 +1,143 @@
+ESTRUCTURA DE ARCHIVOS DE IMÁGENES RECOMENDADA
+==============================================
+
+📁 public/images/
+│
+├── 🖼️ logo.png                          ⭐ IMPORTANTE: Tu logo de El Rinconcito
+├── 🖼️ hero-bg.jpg                       ⭐ IMPORTANTE: Imagen de fondo del Hero
+│
+├── 📁 categories/                       (Imágenes 800x600px)
+│   ├── tacos.jpg
+│   ├── tortas.jpg
+│   ├── burritos.jpg
+│   ├── quesadillas.jpg
+│   ├── enchiladas.jpg
+│   ├── sopes.jpg
+│   ├── bebidas.jpg
+│   ├── postres.jpg
+│   ├── especiales.jpg
+│   ├── desayunos.jpg
+│   ├── comidas.jpg
+│   └── antojitos.jpg
+│
+├── 📁 menu/                            (Imágenes 800x600px de platillos)
+│   ├── taco-asada.jpg
+│   ├── taco-pastor.jpg
+│   ├── taco-pollo.jpg
+│   ├── taco-carnitas.jpg
+│   ├── burrito-asada.jpg
+│   ├── burrito-pollo.jpg
+│   ├── torta-milanesa.jpg
+│   ├── torta-jamon.jpg
+│   ├── quesadilla-queso.jpg
+│   ├── quesadilla-pollo.jpg
+│   ├── enchiladas-verdes.jpg
+│   ├── enchiladas-rojas.jpg
+│   ├── agua-horchata.jpg
+│   ├── agua-jamaica.jpg
+│   └── ... (todas las fotos de tus platillos)
+│
+├── 📁 paquetes/                        (Imágenes 1200x800px)
+│   ├── lunes.jpg
+│   ├── martes.jpg
+│   ├── miercoles.jpg
+│   ├── jueves.jpg
+│   ├── viernes.jpg
+│   ├── sabado.jpg
+│   └── domingo.jpg
+│
+└── 📁 promociones/                     (Imágenes 1200x600px)
+    ├── 2x1-tacos.jpg
+    ├── combo-familiar.jpg
+    ├── descuento-martes.jpg
+    └── promo-especial.jpg
+
+
+REGLAS IMPORTANTES PARA NOMBRES DE ARCHIVO:
+===========================================
+
+✅ CORRECTO:
+  - taco-asada.jpg
+  - burrito-pollo.jpg
+  - agua-horchata.jpg
+  - logo.png
+  
+❌ INCORRECTO:
+  - Taco de Asada.jpg        (tiene espacios y mayúsculas)
+  - Burrito_Pollo.JPG        (usa guión bajo y extensión mayúscula)
+  - Agua Horchata.jpeg       (tiene espacio)
+
+
+PRIORIDAD DE IMÁGENES:
+======================
+
+1️⃣ Alta Prioridad (Subir PRIMERO):
+   - logo.png                    → Logo del restaurante
+   - hero-bg.jpg                 → Imagen principal
+   - categories/*.jpg            → Todas las categorías
+
+2️⃣ Media Prioridad:
+   - paquetes/*.jpg              → Paquetes semanales
+
+3️⃣ Baja Prioridad (opcional):
+   - menu/*.jpg                  → Fotos individuales de platillos
+   - promociones/*.jpg           → Banners de promociones
+
+
+¿DÓNDE CONSEGUIR IMÁGENES SI NO TIENES?
+========================================
+
+Opción 1: Toma fotos de tu restaurante
+  - Usa tu celular con buena luz
+  - Limpia bien el plato antes de fotografiar
+  - Usa un fondo neutro (plato blanco o tablero de madera)
+
+Opción 2: Imágenes temporales de stock (gratis):
+  - Unsplash: https://unsplash.com/s/photos/mexican-food
+  - Pexels: https://www.pexels.com/search/mexican%20food/
+  - Pixabay: https://pixabay.com/images/search/mexican%20food/
+
+Opción 3: Mantener las imágenes automáticas
+  - El sitio seguirá funcionando con las imágenes de LoremFlickr
+  - Es temporal hasta que tengas tus fotos reales
+
+
+HERRAMIENTAS PARA OPTIMIZAR IMÁGENES:
+======================================
+
+Online (Gratis):
+  - TinyPNG: https://tinypng.com/ (reduce tamaño sin perder calidad)
+  - Squoosh: https://squoosh.app/ (optimizador de Google)
+  - iLoveIMG: https://www.iloveimg.com/es/redimensionar-imagen
+
+Windows:
+  - MS Paint (para recortar y cambiar tamaño)
+  - Photos (app incluida en Windows)
+
+
+PASOS PARA CONFIGURAR TUS IMÁGENES:
+====================================
+
+1. Coloca el logo:
+   public/images/logo.png
+
+2. Coloca la imagen del hero:
+   public/images/hero-bg.jpg
+
+3. Coloca imágenes de categorías:
+   public/images/categories/[nombre].jpg
+
+4. Ejecuta el script SQL:
+   - Abre Supabase SQL Editor
+   - Copia y pega el contenido de UPDATE_IMAGES.sql
+   - Modifica según tus categorías reales
+   - Ejecuta el script
+
+5. Recarga tu sitio web:
+   - Presiona Ctrl + F5 para limpiar cache
+   - Verifica que las imágenes se vean correctamente
+
+6. Si algo no funciona:
+   - Verifica nombres de archivo (minúsculas, sin espacios)
+   - Verifica que los archivos existan en las carpetas
+   - Abre la consola del navegador (F12) para ver errores
