@@ -1,5 +1,3 @@
-import { format } from 'date-fns';
-
 export interface BusinessHours {
     open: string; // "HH:mm"
     close: string; // "HH:mm"
