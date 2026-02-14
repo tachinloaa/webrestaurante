@@ -37,10 +37,10 @@ npm install
 
 ### 2. Variables de Entorno
 
-Ya están configuradas en `.env`:
+Crea un archivo `.env` en la raíz del proyecto con tus credenciales de Supabase:
 ```
-VITE_SUPABASE_URL=https://eaavjggnyzgtuaetfimx.supabase.co
-VITE_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+VITE_SUPABASE_URL=tu_url_de_supabase
+VITE_SUPABASE_ANON_KEY=tu_clave_anonima
 ```
 
 ## 🏃 Ejecutar Localmente
@@ -50,11 +50,6 @@ npm run dev
 ```
 
 Visita `http://localhost:5173`
-
-## 🔐 Credenciales Admin (Demo)
-
-- **Email:** admin@elrinconcito.com
-- **Password:** admin123
 
 ## 🌐 Deploy en Cloudflare Pages
 
